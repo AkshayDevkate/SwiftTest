@@ -10,8 +10,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-       
-        VStack(alignment: .leading){
+        
+            //Map
+            MapView().frame(height: 300)
+            
+            
+            //Image
+            circleImage().offset(y: -130).padding(.bottom,-130)
+            
+        
+            //Text
+              VStack(alignment: .leading){
                 Text("Hello world")
                        .font(.title)
             
@@ -26,6 +35,7 @@ struct ContentView: View {
     }
 
     }
+}
     
 
 
