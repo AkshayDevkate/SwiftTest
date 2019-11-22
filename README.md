@@ -6,12 +6,12 @@ To start with swiftUI open Xcode click \n
 2)Single View app .  \n
 Name the project and select swiftUI instead of story board . \n
 
-![screenshot1](UItest1/swiftUI.png)
+![screenshot1](UItest1/swiftui.png)
 
 
 
 OutPut Of UITest1
 
-![screenshot1](UItest1/swiftUI1.png)
+![screenshot1](UItest1/swiftui1.png)
 
 
