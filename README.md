@@ -17,5 +17,5 @@ OutPut Of UITest1
 
 OutPut of Charts -> barchartUI
 
-![screenshot](barcharui.png)
+![screenshot](barchart.png)
 
