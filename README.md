@@ -15,3 +15,7 @@ OutPut Of UITest1
 ![screenshot1](UItest1/swiftui1.png)
 
 
+OutPut of Charts -> barchartUI
+
+![screenshot](barcharui.png)
+
