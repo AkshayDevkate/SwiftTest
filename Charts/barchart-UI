@@ -1,0 +1,81 @@
+//
+//  ContentView.swift
+//  Visual
+//
+//  Created by Akshay Devkate on 14/11/19.
+//  Copyright © 2019 Akshay Devkate. All rights reserved.
+//
+
+import SwiftUI
+
+struct ContentView: View {
+    
+    @State var pickerSelectedItem = 0
+    
+    @State var DataPoints: [[CGFloat]] = [
+        [50,100,150],
+        [60,80,190],
+        [150,100,130]
+    ]
+   
+    var body: some View
+{
+        
+        ZStack{
+    
+            Color(#colorLiteral(red: 0.09817346179, green: 0.9888091031, blue: 1, alpha: 1)).edgesIgnoringSafeArea(.all)
+            
+            VStack{
+                
+       
+            
+            //text to be displayed with height and font size
+        Text("market Index so Far")
+            .font(.system(size: 34))
+            .fontWeight(.heavy)
+        
+            Picker(selection: $pickerSelectedItem, label: Text("")){
+                Text("a").tag(0)
+                Text("b").tag(1)
+                Text("c").tag(2)
+                
+            }.pickerStyle(SegmentedPickerStyle())
+                .padding(.horizontal,24)
+                
+                HStack (spacing: 30){
+                    BarView(value: DataPoints[pickerSelectedItem][0])   //value is input from down
+                    BarView(value: DataPoints[pickerSelectedItem][1])
+                    BarView(value: DataPoints[pickerSelectedItem][2])
+                    }.padding(.top,24)
+                    .animation(.default)
+                }
+            }
+        }
+    
+    }
+
+
+struct BarView: View {
+    
+    
+    //Declare Bar value
+    var value: CGFloat
+    
+    
+    //Function to show graph which will be called up
+    var body: some View{
+        VStack{
+                             ZStack (alignment: .bottom){
+                                 Capsule().frame(width:30, height: 200)
+                                     .foregroundColor(.black)
+                                 Capsule().frame(width:30, height: value)
+                                     .foregroundColor(.white)
+                                 
+                                 }
+                                 Text("D").padding(.top,8)
+        }
+        
+    }
+}
+    
+
