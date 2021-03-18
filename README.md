@@ -14,4 +14,4 @@ Charts -> barchartUI
 # Storyboard UI
 
 
-![screenshot](https://github.com/AkshayDevkate/SwiftTest/tree/master/PassData/Output)
+![screenshot](PassData/Output/outputpassdata.gif)
