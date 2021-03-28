@@ -15,4 +15,8 @@ Charts -> barchartUI
 
 Test and implement storyboardUI
 
+
+1} Segue 
+Transfering data from one view controller to other.
+
 ![screenshot](PassData/Output/outputpassdata.gif)
