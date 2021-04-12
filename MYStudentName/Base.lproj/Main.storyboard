@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1ob-DL-W1c">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Hbb-Dv-Vz4">
+            <objects>
+                <viewController id="1ob-DL-W1c" customClass="AViewController" customModule="MYStudentName" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZFR-U1-rSK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YV1-cT-NW9">
+                                <rect key="frame" x="139" y="375" width="136" height="30"/>
+                                <state key="normal" title="Next ViewController"/>
+                                <connections>
+                                    <action selector="ButtonTapped:" destination="1ob-DL-W1c" eventType="touchUpInside" id="dhC-JZ-5gh"/>
+                                    <segue destination="r00-Dp-grY" kind="show" identifier="FirstVC" id="kvL-bA-VVP"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GKo-yP-RwU">
+                                <rect key="frame" x="20" y="169" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZY-3X-auJ">
+                                <rect key="frame" x="20" y="121.5" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="m8v-bP-IJS" firstAttribute="bottom" secondItem="YV1-cT-NW9" secondAttribute="bottom" constant="457" id="2XG-iu-3nF"/>
+                            <constraint firstItem="GKo-yP-RwU" firstAttribute="leading" secondItem="ZFR-U1-rSK" secondAttribute="leadingMargin" id="2al-jy-Vl8"/>
+                            <constraint firstItem="GKo-yP-RwU" firstAttribute="top" secondItem="CZY-3X-auJ" secondAttribute="bottom" constant="27" id="3t0-Ce-N1Q"/>
+                            <constraint firstItem="YV1-cT-NW9" firstAttribute="leading" secondItem="m8v-bP-IJS" secondAttribute="leading" constant="139" id="RcB-fx-zWY"/>
+                            <constraint firstItem="YV1-cT-NW9" firstAttribute="centerX" secondItem="CZY-3X-auJ" secondAttribute="centerX" id="SlH-hO-Ppl"/>
+                            <constraint firstItem="YV1-cT-NW9" firstAttribute="centerX" secondItem="GKo-yP-RwU" secondAttribute="centerX" id="SqC-yp-Gol"/>
+                            <constraint firstItem="GKo-yP-RwU" firstAttribute="top" secondItem="ZFR-U1-rSK" secondAttribute="top" constant="169" id="iTN-vF-wkW"/>
+                            <constraint firstItem="YV1-cT-NW9" firstAttribute="centerX" secondItem="ZFR-U1-rSK" secondAttribute="centerX" id="nNi-dV-DGn"/>
+                            <constraint firstItem="GKo-yP-RwU" firstAttribute="leading" secondItem="CZY-3X-auJ" secondAttribute="leading" id="uKq-O4-yg5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="m8v-bP-IJS"/>
+                    </view>
+                    <connections>
+                        <outlet property="NameTwo" destination="GKo-yP-RwU" id="aWr-hR-Ftc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C4E-Of-Lfo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076.8115942028987" y="123.88392857142857"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xBq-W4-Unu">
+            <objects>
+                <viewController id="r00-Dp-grY" customClass="BViewController" customModule="MYStudentName" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="usV-sz-g98">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xv8-m7-Dga">
+                                <rect key="frame" x="44" y="133" width="329" height="34"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XEz-78-DLG" firstAttribute="bottom" secondItem="Xv8-m7-Dga" secondAttribute="bottom" constant="641" id="9ZH-id-XlS"/>
+                            <constraint firstItem="Xv8-m7-Dga" firstAttribute="top" secondItem="XEz-78-DLG" secondAttribute="top" constant="133" id="M9e-as-796"/>
+                            <constraint firstItem="Xv8-m7-Dga" firstAttribute="leading" secondItem="XEz-78-DLG" secondAttribute="leading" constant="44" id="VcA-zJ-fNL"/>
+                            <constraint firstItem="XEz-78-DLG" firstAttribute="trailing" secondItem="Xv8-m7-Dga" secondAttribute="trailing" constant="41" id="jpo-ZO-G6U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XEz-78-DLG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nC8-tj-vU0"/>
+                    <connections>
+                        <outlet property="Name" destination="Xv8-m7-Dga" id="dyw-OF-Hpk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Unc-cX-evC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1976.8115942028987" y="123.88392857142857"/>
+        </scene>
+    </scenes>
+</document>
