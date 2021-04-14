@@ -27,3 +27,9 @@ Test and implement storyboardUI
 ![Output Alert](https://github.com/AkshayDevkate/SwiftTest/blob/master/Outputs/Outpu.gif)
 
 [Link](https://github.com/AkshayDevkate/SwiftTest/tree/master/Alert) to code 
+
+
+
+| Link to code and Description | Output gif|
+|--|--|
+|[Link](https://github.com/AkshayDevkate/SwiftTest/tree/master/Alert) to code | ![Output Alert](https://github.com/AkshayDevkate/SwiftTest/blob/master/Outputs/Outpu.gif) |
