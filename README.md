@@ -16,20 +16,7 @@ Charts -> barchartUI
 Test and implement storyboardUI
 
 
-## Transfering Data between the view Controllers 
-
-![screenshot](PassData/Output/outputpassdata.gif)
-
-[Link](https://github.com/AkshayDevkate/SwiftTest/tree/master/MYStudentName) to code 
-
-## Creating Alert 
-
-![Output Alert](https://github.com/AkshayDevkate/SwiftTest/blob/master/Outputs/Outpu.gif)
-
-[Link](https://github.com/AkshayDevkate/SwiftTest/tree/master/Alert) to code 
-
-
-
 | Link to code and Description | Output gif|
 |--|--|
-|[Link](https://github.com/AkshayDevkate/SwiftTest/tree/master/Alert) to code | ![Output Alert](https://github.com/AkshayDevkate/SwiftTest/blob/master/Outputs/Outpu.gif) |
+| CGenerating Alerts in App [Link](https://github.com/AkshayDevkate/SwiftTest/tree/master/Alert) to code | ![Output Alert](https://github.com/AkshayDevkate/SwiftTest/blob/master/Outputs/Outpu.gif) |
+| Trnasfering data between the view controllers [Link](https://github.com/AkshayDevkate/SwiftTest/tree/master/MYStudentName) to code  | ![screenshot](PassData/Output/outputpassdata.gif)|
